@@ -16,6 +16,9 @@ import {
   ShieldCheck,
   Award
 } from 'lucide-react';
+import neuroIllustration from '../assets/images/neuro_illustration_1781778010361.jpg';
+import expertMale1 from '../assets/images/expert_male_1.png';
+import expertMale2 from '../assets/images/expert_male_2.png';
 
 interface HomeViewProps {
   setView: (view: string) => void;
@@ -79,7 +82,7 @@ export default function HomeView({ setView }: HomeViewProps) {
         {/* Full Section Background Image with high-quality localized pediatric blend/vignette */}
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <img 
-            src="/src/assets/images/neuro_illustration_1781778010361.jpg" 
+            src={neuroIllustration} 
             alt="Nexcore Neurodiversity watercolor background illustration with kids, heart brain and glowing neurons" 
             className="w-full h-full object-cover object-center opacity-90 md:opacity-100 transition-opacity duration-300"
             referrerPolicy="no-referrer"
@@ -183,7 +186,7 @@ export default function HomeView({ setView }: HomeViewProps) {
             <div className="bg-white rounded-[2rem] border border-brand-100/60 p-6 shadow-soft flex flex-col sm:flex-row gap-6 items-center sm:items-start transition-all duration-300 hover:-translate-y-1 hover:shadow-soft-lg group">
               <div className="w-40 h-48 sm:w-44 sm:h-56 rounded-2xl overflow-hidden shadow-inner shrink-0 border border-brand-100 bg-slate-50">
                 <img 
-                  src="/src/assets/images/expert_male_1.png" 
+                  src={expertMale1} 
                   alt="Dr. Shubham Jangid" 
                   className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105"
                   referrerPolicy="no-referrer"
@@ -206,7 +209,7 @@ export default function HomeView({ setView }: HomeViewProps) {
             <div className="bg-white rounded-[2rem] border border-brand-100/60 p-6 shadow-soft flex flex-col sm:flex-row gap-6 items-center sm:items-start transition-all duration-300 hover:-translate-y-1 hover:shadow-soft-lg group">
               <div className="w-40 h-48 sm:w-44 sm:h-56 rounded-2xl overflow-hidden shadow-inner shrink-0 border border-brand-100 bg-slate-50">
                 <img 
-                  src="/src/assets/images/expert_male_2.png" 
+                  src={expertMale2} 
                   alt="Dr. Kuldeep Singh Rathore" 
                   className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105"
                   referrerPolicy="no-referrer"

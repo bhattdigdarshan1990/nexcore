@@ -1,4 +1,5 @@
 import React from 'react';
+import nexcoreLogo from '../assets/images/nexcore_logo.jpg';
 
 interface LogoProps {
   variant?: 'light' | 'dark';
@@ -19,7 +20,7 @@ export const Logo: React.FC<LogoProps> = ({
     <div className={`flex items-center gap-3 select-none ${className}`}>
       {/* Authentic Original Logo Image exactly as provided */}
       <img
-        src="/src/assets/images/nexcore_logo.jpg"
+        src={nexcoreLogo}
         alt="Nexcore Rehabilitation and Clinical Services"
         className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 shrink-0 object-contain"
         referrerPolicy="no-referrer"
